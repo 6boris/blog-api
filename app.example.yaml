@@ -1,0 +1,46 @@
+app:
+  name: BLOG
+  env:  local
+#  env:  [local,dev,prod,test]
+
+
+# server config
+server:
+  host: 127.0.0.1
+  port: 9000
+
+# mysql config
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  database: blog
+  username: root
+  password: 123456
+
+# redis config
+redis:
+  host: 127.0.0.1
+  port: 6379
+  db: 0
+  auth:
+
+mail:
+  driver: smtp
+  host: smtp.126.com
+  port: 465
+  username: kylego@126.com
+  password: 123qweasdzxc
+  encryption: ssl
+  fromaddress: kylego@126.com
+  fromname: Anonycurse
+
+github:
+  clientid: 2c8f9bfb76906923eb88
+  clientkey: 9ece0c96619c43782cd237654be92d9897419b66
+  clientredirect: https://www.anonycurse.cn/index/auth/github/callback
+
+qiniu:
+  accesskey: zf8EqzwIn46bT0DLwR0E5Fg3XjPzjp8bMj_ug7RW
+  secretkey: eKOjPZSehSSi2qFwZJNBWVTws5MLvQKcAanWzvFH
+  bucket: blog
+  domain: https://oss.kyle.link/

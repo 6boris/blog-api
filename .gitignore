@@ -13,3 +13,5 @@
 
 vendor
 app.yaml
+.idea
+*.iml
